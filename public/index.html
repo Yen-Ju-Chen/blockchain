@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Final Project: Defi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="FinalProject.css" media="screen" /> -->
+
+
+
+</head>
+<body class="d-flex flex-column vh-100">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand">非洲援助專案募資平台</a>
+        </br>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/" id="mainpage">首頁</a>
+              <a class="nav-link" href="story.html" id="story">緣起</a>
+              <a class="nav-link"  id="uploadpage">提案</a>
+              <a class="nav-link" href="account.html" id="account">餘額</a>
+              <a class="nav-link" id="loginpage">登入</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- <h5  id="nowAcc" style="color orange;">現在登入: </h5> -->
+    <div class="gfx">
+        <span> <a class="navbar-brand"  id="nowAcc">現在登入:</a></span>
+    </div>
+    <main class="container mt-5">
+
+        <!-- <div class="top">
+            <div class="navigation">
+                <a id="mainpage">首頁</a>
+                <a id="loginpage">我要登入</a>
+                <a id="uploadpage">我要上架商品</a>
+        </div> -->
+
+            <!-- <div class="pattern">
+                <span></span>
+            </div> -->
+
+            <!-- <div class="header">
+                <h1 id="accountStatus">帳戶狀態:</h1>
+                <p id="ethBalance" style="color black;">以太帳戶餘額 (ETH): </p>
+                <p id="accountTokenBalance" style="color black;">Token帳戶餘額: </p>
+                <br>
+                <button id="update">更新帳戶餘額</button>
+            </div>
+            <div class="pattern"><span></span></div>
+        </div> -->
+        <div class="row mb-3">
+            <div class="col-6 offset-3">
+                <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507427100689-2bf8574e32d4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h1 class="card-title text-center">探索</h1>
+              <select id="allproducts" class="form-select">
+                <option value="" disabled>請選擇項目</option>
+            </select>
+            </br>
+            <button class="btn btn-primary" id="selectinfo">確定</button>  
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> 
+                  <h1 id="productPrice">NT: </h1>
+                <!-- <h1 id="sellerID" style="color: red;">賣家遊戲ID: </h1> -->
+            </li>
+                <li class="list-group-item"> 
+                <h1 id="productName">專案介紹: </h1>
+                <br>    
+            </li>
+            </ul>
+            <!-- <div class="card-body">
+              <button class="card-link  btn btn-outline-primary" id="buy">我要贊助</button>
+              <button class="btn btn-outline-secondary card-link" id="successtradeButton">接受贊助</button>
+            </div> --> 
+                    <button class="btn btn-danger" id="buy">我要贊助</button>
+                    <button class="btn btn-warning"id="buyerID">贊助ID</button>
+                    <hr>
+                    <button class="btn btn-secondary" id="successtradeButton">接受贊助</button>
+                    <button id="withdrawButton">領收</button>
+                    <button class="btn btn-secondary" id="refundButton">取消贊助</button>
+                    <h3 id="tradeStatus" style="color: teal">贊助進度:</h3>
+                    <button class="btn btn-secondary" id="updatestatus">進度更新</button>
+                </div>
+                </div>
+            </div>
+</div>
+
+
+        </main>
+
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="javascripts/index.js"></script>
+
+</body>
+
+<footer class="footer bg-dark py-3  mt-auto">
+    <div class="container">
+        <span class="text-muted">&copy; Blockchain 2021</span>
+    </div>
+ </footer>
+
+
+</html>
